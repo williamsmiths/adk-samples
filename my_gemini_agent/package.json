@@ -1,0 +1,6 @@
+{
+  "name": "my_gemini_agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}

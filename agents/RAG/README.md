@@ -156,8 +156,28 @@ More details about managing data in Vertex RAG Engine can be found in the
 [official documentation page](https://cloud.google.com/vertex-ai/generative-ai/docs/rag-quickstart).
 
 ## Running the Agent
-You can run the agent using the ADK command in your terminal.
-from the root project directory:
+
+You can run the agent using several methods:
+
+### Using the setup_and_run.sh Script
+
+The easiest way to set up and run the agent is to use the provided script:
+
+```bash
+chmod +x setup_and_run.sh
+./setup_and_run.sh
+```
+
+This script will:
+1. Set up your environment 
+2. Install dependencies
+3. Configure environment variables (if needed)
+4. Run the RAG agent
+
+### Running Manually
+
+Alternatively, you can run the agent manually using the ADK command in your terminal.
+From the root project directory:
 
 1.  Run agent in CLI:
 
@@ -171,6 +191,12 @@ from the root project directory:
     ```
     Select the RAG from the dropdown
 
+### Environment Preparation
+
+Before running the agent, ensure that:
+1. Your virtual environment is activated
+2. Your `.env` file is properly configured
+3. You have set up your RAG corpus (see "Setup Corpus" section above)
 
 ### Example Interaction
 Here's a quick example of how a user might interact with the agent:
